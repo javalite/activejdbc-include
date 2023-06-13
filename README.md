@@ -50,4 +50,11 @@ The important line is:
 ```
 SELECT * FROM movies WHERE director_id IN (?, ?) ORDER BY id","params":[27,28]
 ```
-Which proves that the `include()` method is working as expected
+Which proves that the `include()` method is working as expected. By the time this code is executed: 
+
+```java
+director.getAll(Movie.class);
+```
+
+the collection of movies is already loaded in memory because it was "included" previously. 
+
