@@ -10,7 +10,7 @@ This example uses MySQL in a Docker container. When starting the database for th
 ./docker/install-run.sh
 ```
 
-In subsequent runs,  you can start use start/stop scripts
+In subsequent runs,  you can use start/stop scripts:
 
 ```
 ./docker/start.sh
